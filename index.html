@@ -41,6 +41,37 @@ body {
   border-left: 3px solid #5865F2;
   padding-left: 14px;
 }
+.anchor {
+  background: #5865F2;
+  border-radius: 10px;
+  padding: 24px 26px;
+  margin-top: 24px;
+  color: white;
+}
+.anchor h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 14px;
+}
+.anchor .lede {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: white;
+}
+.anchor ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.anchor li {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.92);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.anchor li::before { content: "\2192"; position: absolute; left: 0; color: rgba(255,255,255,0.7); font-weight: 700; }
 .section { margin-top: 40px; }
 .section-head {
   display: flex;
@@ -150,6 +181,17 @@ img {
 <div class="body">
 
   <p class="intro">Activity sharing (Rich Presence) is <strong>on by default</strong> for all Discord users &mdash; but every player has full, self-service controls to manage visibility at the global, per-server, and per-game level. No linked account is required to access or change any of these settings.</p>
+
+  <div class="anchor">
+    <h3>User Expectations</h3>
+    <p class="lede">Discord users understand and actively use presence. Sharing what you&rsquo;re playing is a normal, expected part of how people present themselves on Discord &mdash; not a hidden or obscure setting.</p>
+    <ul>
+      <li>Presence is a visible, everyday feature: it appears on your profile, in member lists, and on friends&rsquo; screens, so users are continuously aware their activity is being shown.</li>
+      <li>Controls are granular and easy to reach &mdash; visibility can be turned off globally, or limited per-server and per-game, all from within Settings.</li>
+      <li>Every privacy control lives directly in Settings and can be changed at any time, with no setup required.</li>
+      <li>Sensitive data is never exposed: presence shows the game and session basics, never in-game identity, rank, or account details.</li>
+    </ul>
+  </div>
 
   <div class="section">
     <div class="section-head">
@@ -266,13 +308,13 @@ img {
       <li>Presence is opt-out, not opt-in &mdash; but disabling it takes a single toggle.</li>
       <li>Controls are granular: global, per-server, and per-game visibility are all independently configurable.</li>
       <li>The eye icon in Registered Games lets a player hide one specific game without touching anything else.</li>
-      <li>All controls are available to every Discord user &mdash; linked or unlinked. No account linking required.</li>
+      <li>All controls live in Settings and are available to every Discord user, with no setup required.</li>
       <li>Join controls are separate from visibility &mdash; a player can be visible but not joinable.</li>
     </ul>
   </div>
 
   <div class="footer">
-    These settings apply universally regardless of whether a third-party game integration (e.g. a Riot account link) is connected. Unlinked players retain the same full suite of privacy controls as linked players.
+    These privacy controls are part of Discord&rsquo;s core settings and are available to every user from within the app.
   </div>
 
 </div>
